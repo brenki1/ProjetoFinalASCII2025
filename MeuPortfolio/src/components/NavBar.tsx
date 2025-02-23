@@ -4,13 +4,15 @@ function NavBar() {
 
     const StyledBar = styled(Toolbar)(({theme})=> ({
         display: "flex",
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
+        backgroundColor: `${theme.palette.secondary.dark}`,
+        color: `${theme.palette.primary.light}`
     }))
 
 
     return (
       <>
-            <AppBar position="relative">
+            <AppBar position="absolute">
                 <StyledBar>
                     <MenuItem>Sobre</MenuItem>
                     <MenuItem>Skills</MenuItem>

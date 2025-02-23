@@ -17,13 +17,17 @@ function Hero() {
         backgroundColor: theme.palette.primary.contrastText,
         height: "100vh",
         display: "flex",
-        alignItems:"center"
+        alignItems:"center",
+        [theme.breakpoints.up('xs')] : {
+            padding: "20px"
+        }
     }))
 
     const StyledImg = styled("img")(()=> ({
         width: "70%",
         borderRadius: "2%",
-        border:`2px solid ${theme.palette.secondary.dark}`
+        border:`2px solid ${theme.palette.secondary.dark}`,
+    
     }))
 
     return (
@@ -38,11 +42,11 @@ function Hero() {
                     </Grid2>
 
                     <Grid2 size={{xs:12, md: 8}}>
-                        <Typography color="primary" variant="h2" textAlign="center" pb={3}>Osvaldo Pagioli de Lollo Silva</Typography>
-                        <Typography color="primary" variant="h3" textAlign="center" pb={3}>Graduando em Ciência da Computação - UFU</Typography>
+                        <Typography color="primary" variant="h2" textAlign="center" pb={3} pl={2}>Osvaldo Pagioli de Lollo Silva</Typography>
+                        <Typography color="primary" variant="h3" textAlign="center" pb={3} pl={2}>Graduando em Ciência da Computação</Typography>
                         <Grid2 container sx={{display:"flex", justifyContent:"center"}}>
                             <Grid2 size={{xs:4, md:2}} sx={{display:"flex", justifyContent:"center"}}>
-                                <Button color="secondary">
+                                <Button color="secondary" onClick={()=> window.open("https://github.com/brenki1")}>
                                     <GitHubIcon/>
                                 </Button>
 
@@ -54,7 +58,7 @@ function Hero() {
                                 </Button>
                             </Grid2>
                             <Grid2 size={{xs:4, md:2}} sx={{display:"flex", justifyContent:"center"}}>
-                            <Button color="secondary">
+                            <Button color="secondary" onClick={()=> window.open("mailto:osvaldo.lollo@ufu.br")}>
                                     <MailOutlineIcon></MailOutlineIcon>
                                 </Button>
                             </Grid2>
