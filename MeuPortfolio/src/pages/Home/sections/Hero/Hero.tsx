@@ -42,7 +42,7 @@ function Hero() {
                     </Grid2>
 
                     <Grid2 size={{xs:12, md: 8}}>
-                        <Typography color="primary" variant="h2" textAlign="center" pb={3} pl={2}>Osvaldo Pagioli de Lollo Silva</Typography>
+                        <Typography color="primary" variant="h1" textAlign="center" pb={3} pl={2}>Osvaldo Pagioli</Typography>
                         <Typography color="primary" variant="h3" textAlign="center" pb={3} pl={2}>Graduando em Ciência da Computação</Typography>
                         <Grid2 container sx={{display:"flex", justifyContent:"center"}}>
                             <Grid2 size={{xs:4, md:2}} sx={{display:"flex", justifyContent:"center"}}>
