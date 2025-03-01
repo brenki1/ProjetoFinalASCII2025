@@ -33,7 +33,7 @@ function Hero() {
     return (
 
       <>
-        <StyledHero>
+        <StyledHero id="hero">
             <Container sx={{maxWidth:"lg"}}>
                 <Grid2 container spacing={2}>
 
@@ -53,7 +53,7 @@ function Hero() {
                             </Grid2>
 
                             <Grid2 size={{xs:4, md:2}} sx={{display:"flex", justifyContent:"center"}}>
-                                <Button color="secondary">
+                                <Button color="secondary" onClick={()=> window.open("https://www.linkedin.com/in/osvaldo-pagioli-701a35353")}>
                                     <LinkedInIcon></LinkedInIcon>
                                 </Button>
                             </Grid2>

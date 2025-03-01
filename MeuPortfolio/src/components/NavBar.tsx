@@ -1,5 +1,6 @@
 import { AppBar, MenuItem, styled, Toolbar } from "@mui/material"
 
+
 function NavBar() {
 
     const StyledBar = styled(Toolbar)(({theme})=> ({
