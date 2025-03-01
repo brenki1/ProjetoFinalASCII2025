@@ -1,11 +1,8 @@
 import { Container, Grid2, styled, Typography } from "@mui/material";
-import theme from "../../../../theme";
-import { Style } from "@mui/icons-material";
-
 
 function About() {
 
-    const StyledAbout = styled("div")(({theme}) => ({
+    const StyledAbout = styled("div")(() => ({
         backgroundColor: "white",
         display: "flex"
         

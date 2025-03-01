@@ -3,8 +3,8 @@ import Imagem from "../../../../assets/images/avatar.jpg"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import StyledButton from "../../../../components/StyledButton";
 import theme from "../../../../theme";
+
 
 
 //Parte inicial, primeira informação que o usuário vê ao abrir a página
@@ -34,11 +34,14 @@ function Hero() {
 
       <>
         <StyledHero id="hero">
+            
             <Container sx={{maxWidth:"lg"}}>
                 <Grid2 container spacing={2}>
 
                     <Grid2 size={{xs:12, md: 4}} sx={{display:"flex", justifyContent:"center"}}>
-                        <StyledImg src={Imagem}/>
+ 
+            
+            <StyledImg src={Imagem}/>
                     </Grid2>
 
                     <Grid2 size={{xs:12, md: 8}}>
